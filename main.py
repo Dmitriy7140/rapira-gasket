@@ -9,5 +9,5 @@ app = FastAPI(
 
 @app.get("/open/market/rates")
 async def get_market_rates():
-    response = rapira.get_market_rates()
+    response = rapira.get_usdt_rub()
     return response
